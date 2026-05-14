@@ -1,0 +1,101 @@
+Database 
+----------
+It is an organized collection of data. can be easily accessed, modified.
+
+RDBMS --> Relational Database Management System 
+------------------------------------------------
+>> Data is stored in form of Tables(Rows and Cols)
+>> SQL is needed.
+>> Ex: PostgreSQL, MySQL, Oracle..
+
+DBMS --> NoSQL 
+----------------
+>> Data is stored in form of Documents(BSON  -> binary JSON)
+>> SQL not needed.
+>> Ex: MongoDB, MariaDB....
+
+MySQL
+------
+>> Open source database software.
+>> very popular in WebDev.
+
+SQL ---> Structured Query Language.
+-------------------------------------
+Syntax:
+---------
+>> It is Case-insensitive. (a=A).
+SELECT * FROM tbname;
+select * from tbname;
+>> Delimiter is must (query breaker) (;)
+
+
+Database ---> Table --> data
+(Schema)
+
+Cat --> Entity
+Attributes ---> Height, name, Weight, color
+Cat(table name) --> 4 coloumn
+
+SQL Sheet extension ---> .sql 
+
+Datatypes 
+-----------
+Numeric 
+---------
+INT ---> Whole numbers 
+FLOAT ---> Decimals
+BIGINT ---> Large Whole Numbers 
+DOUBLE ---> Large Decimals
+
+String 
+-------
+CHAR(n) --> Fixed Length Char Str. Ex: CHAR(5) --> "hello", "hi hi", "priyanka", "leo"
+VARCHAR(n) --> Variable length Char Str. Ex: VARCHAR(5) --> "leo", "Livi", "Livin", "Vikram"
+TEXT --> paragraph
+
+BOOLEAN 
+--------
+BOOLEAN --> 1,0
+
+DATE and TIME 
+--------------
+DATE ---> "yyyy-mm-dd". Ex: "2026-05-28"
+TIME ---> "HH:MM:SS". Ex: "07:30:00"
+DATETIME ---> Both
+
+Keys and Constraints 
+--------------------
+Primary key --> It ensures no duplicates are stored in a col and no nulls are stored. It identifies each records uniquely.
+
+
+QUERIES
+=========
+To create a Database ---> CREATE DATABASE dbname;
+To Select a Database ---> USE dbName;
+To Create Table ---> CREATE TABLE tbname (
+    col datatype constraints,
+    col datatype constraints,
+    col datatype constraints,
+    col datatype constraints
+);
+
+
+CRUD 
+-------
+CREATE 
+READ
+UPDATE
+DELETE 
+
+
+student 
+----------
+
+name   age   id(pk)
+------------------
+aly    22    1
+ken    21    2
+ben    39    3
+ken    39    4
+
+update age to 40 id=4
