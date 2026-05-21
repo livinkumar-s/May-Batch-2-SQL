@@ -76,6 +76,36 @@ Operators
 >=
 <=
 
+Between Operator 
+-----------------
+Used to filter values within a range.(Inclusive range)
+.... WHERE columnName BETWEEN val1 AND val2; 
+
+IN and NOT IN operator 
+---------------------------
+Used when checking multiple values.
+.... WHERE columnName NOT IN (val1,val2....);
+
+Logical Operators 
+-------------------
+AND 
+OR 
+NOT
+
+LIKE Operator 
+--------------
+Pattern Matching 
+... WHERE colName LIKE pattern;
+
+wildcards 
+------------
+% --> can match 0 to infinite number of characters.
+_ --> can match one character.
+
+starts with a --> "a%" --> "anshiya", "anu", "a".
+ends with a --> "%a" --> "anshiya", "livin"
+exactly 3 char, 3rd is n --> "__n"
+
 
 QUERIES
 =========
