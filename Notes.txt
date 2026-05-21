@@ -97,6 +97,19 @@ LIKE Operator
 Pattern Matching 
 ... WHERE colName LIKE pattern;
 
+Limiting / OFFSET 
+----------
+>> Used to limit the records.
+... LIMIT num 
+>> Used to skip record.
+... LIMIT num OFFSET num;
+
+ORDER 
+----
+>> sorting records.
+... ORDER BY colName asc/desc;
+
+
 wildcards 
 ------------
 % --> can match 0 to infinite number of characters.

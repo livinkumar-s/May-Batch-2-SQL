@@ -15,3 +15,8 @@ select name, age from employeebasic;
 select age as number from employeebasic;
 
 select name as employeeName, age as employeeAge from employeebasic;
+
+select name as employeename, age as employeeage from employeebasic;
+
+SELECT * FROM employeebasic where age>40 LIMIT 3 OFFSET 2;
+SELECT * FROM employeebasic order by age desc limit 1;
