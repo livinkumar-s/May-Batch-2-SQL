@@ -150,3 +150,37 @@ WHERE
 -----
 >> Filtering rows.
 SELECT, UPDATE, DELETE ... WHERE cond;
+
+Functions in MySQL 
+--------------------
+>> It is a predefined built-in operations used to perform calculations.
+
+Numeric
+--------
+ROUND(dec,dig) --> rounding off a Dec number to nearest int. ROUND(2.926564754,3) -->2.927
+FLOOR(dec) --> floor value
+CEIL(dec) --> CEIL the dec number
+ABS(num)
+MOD(num1,num2)
+SQRT(num)
+POWER(3,3)
+
+String 
+-------
+CONCAT(str1, str2...) --> concatination
+UPPER()
+LOWER()
+LENGTH()
+TRIM(str)
+LTRIM()
+RTRIM()
+SUBSTRING(str,start,length)
+REPLACE(str, old, new)
+REVERSE(str)
+
+DATE and TIME 
+-----------------
+CURDATE()
+CURTIME()
+NOW()
+DATEDIFF(d1,d2)
