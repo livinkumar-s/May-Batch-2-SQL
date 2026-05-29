@@ -65,7 +65,18 @@ DATETIME ---> Both
 
 Keys and Constraints 
 --------------------
+Constraints are rules applied to a col to control the type of data that can be stored.
+
 Primary key --> It ensures no duplicates are stored in a col and no nulls are stored. It identifies each records uniquely.
+
+Foreign Key --> creates relationship between two tables
+
+
+AUTO_INCREMENT --> it icreases numeric value automatically row by row.
+UNIQUE --> ensures no duplicates 
+NOT NULL --> ensures no nulls in a col
+DEFAULT --> assigns default value to a col.
+CHECK (cond)
 
 Operators 
 --------------
@@ -184,3 +195,4 @@ CURDATE()
 CURTIME()
 NOW()
 DATEDIFF(d1,d2)
+
