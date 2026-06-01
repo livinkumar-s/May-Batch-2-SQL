@@ -196,3 +196,38 @@ CURTIME()
 NOW()
 DATEDIFF(d1,d2)
 
+Joins
+------
+Combining rows from 2 or more tables.
+
+INNER JOIN 
+-----------
+>> returns only matching records.
+Ex: SELECT colDetails FROM Tb1 INNER JOIN Tb2 ON relatedcolumns;
+
+LEFT OUTER JOIN 
+-----------------
+>> returns all records from left table.
+>> only matching records from right table.
+Ex: SELECT colDetails FROM Tb1 LEFT JOIN Tb2 ON relatedcolumns;
+
+RIGHT OUTER JOIN 
+-----------------
+>> returns all records from right table.
+>> only matching records from left table.
+Ex: SELECT colDetails FROM Tb1 RIGHT JOIN Tb2 ON relatedcolumns;
+
+FULL OUTER JOIN 
+----------------
+>> returns all records from both table.
+>> left join union right join.
+
+CROSS JOIN 
+---------------
+>> It joins all records from left table to all from right table.
+Ex: SELECT colDetails FROM Tb1 CROSS JOIN Tb2;
+
+rows in output = rows from left table * row from right table
+
+size --> m,l,xl,xxl.
+color --> blue, red.
