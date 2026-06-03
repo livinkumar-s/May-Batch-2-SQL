@@ -162,6 +162,10 @@ WHERE
 >> Filtering rows.
 SELECT, UPDATE, DELETE ... WHERE cond;
 
+ALTER  
+----------
+
+
 Functions in MySQL 
 --------------------
 >> It is a predefined built-in operations used to perform calculations.
@@ -231,3 +235,49 @@ rows in output = rows from left table * row from right table
 
 size --> m,l,xl,xxl.
 color --> blue, red.
+
+
+roles 
+---------
+id      roleName     playerId 
+--------------------------------
+1	All rounder	        1
+2	Batsman	            2
+3	Batsman	            6
+4	Batsman	            8
+5	Bowler	            7
+6	All rounder	        20(invalid)
+
+cricketer 
+-----------
+id  name                email               phone      cent isActive
+-----------------------------------------------------------------
+1	Sachin Tendulkar	sachin@example.com	9876543210	100	0
+2	Virat Kohli	        virat@example.com	9876543211	86	1
+3	Rahul Dravid	    rahul@example.com	9876543212	50	0
+4	Sourav Ganguly	    sourav@example.com	9876543213	30	0
+5	MS Dhoni	        ms@example.com	    9876543215	30	1
+6	Rohit Sharma	    rohit@example.com	9876543216	25	1
+7	Anil Kumble	        anil@example.com	9876543217	20	0
+8	Steve smith	        steve@example.com	9876543218	25	1
+9	Kane Williamson	    kane@example.com	9876543219	70	1
+
+select mod(cent,2)
+
+Aggregation
+--------------
+>> Combines multiple rows into a single result.
+
+COUNT --> counts the rows 
+MAX --> largest
+MIN --> smallest
+SUM --> sum of numeric col.
+AVG --> average
+
+GROUP BY 
+--------
+To group the rows that have same value under a column.
+..... GROPU BY colName;
+
+HAVING --> filteration with GROUP
+WHERE --> filteration with record

@@ -16,10 +16,10 @@ INSERT INTO role (roleName,playerId) values
 ("Bowler",7),
 ("All rounder",20);
 
-select * from role;
+select * from country;
 
-SELECT c.name,r.roleName 
-FROM cricketer c INNER JOIN role r ON c.id=r.playerId;
+SELECT * 
+FROM cricketer c INNER JOIN country r ON c.id=r.playerId;
 
 SELECT c.name,r.roleName 
 FROM cricketer c LEFT JOIN role r ON c.id=r.playerId
@@ -36,3 +36,5 @@ country co on c.id=co.playerId
 inner join role r on r.playerId=c.id;
 
 SELECT * from cricketer CROSS JOIN role;
+
+
