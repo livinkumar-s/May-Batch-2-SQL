@@ -281,3 +281,25 @@ To group the rows that have same value under a column.
 
 HAVING --> filteration with GROUP
 WHERE --> filteration with record
+
+Sub queries 
+---------------
+>> Query inside another query.
+>> Sub query runs first.
+>> Outer runs then.
+
+Outer Query...(Sub query)
+
+Single Row Sub query 
+----------------------
+>> Returns a single row 
+
+Multi row subquery 
+-------------------
+>> Returns multiple rows.
+in, not in, any, all 
+
+Correlated Subquery 
+--------------------
+>> inner query depends on value from outer.
+
