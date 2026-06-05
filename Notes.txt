@@ -131,6 +131,12 @@ ends with a --> "%a" --> "anshiya", "livin"
 exactly 3 char, 3rd is n --> "__n"
 
 
+DDL --> Data Definition Language(CREATE, ALTER, DROP, TRUNCATE...)(auto commit)
+DML --> DATA Manipulation Language  (INSERT, UpdatE, DELETE)
+DQL --> DATA Query Language (SELECT...)
+TCL --> (Transaction Control Language)
+DCL --> (Data Control Language)
+
 QUERIES
 =========
 To create a Database ---> CREATE DATABASE dbname;
@@ -155,7 +161,24 @@ CREATE --> insert
 READ --> select
 UPDATE --> update
 DELETE --> DELETE
--
+
+ALTER 
+----------
+>> To modify the structure of a table.
+
+ALTER TABLE tbname (alteration)...;
+
+To add new Column --> ALTER TABLE tbName ADD col dt const, ADD col dt cons.....;
+To add new Col at specific Position -->   .....AFTER col;
+Tp Modify the col's datatype -->  .....MODIFY col dt;
+To rename a column ---> ... RENAME COLUMN oldName TO newName;(above 8+)
+To Rename and change dt --> ... CHANGE colName newName dt....;  
+
+To DROP a Column --> ... DROP COLUMN colName;
+To DROP a table --> DROP TABLE tbName;
+To DROP DB --> DROP DATABASE dbName;
+
+
 
 WHERE 
 -----
