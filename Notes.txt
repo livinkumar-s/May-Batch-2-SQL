@@ -326,3 +326,37 @@ Correlated Subquery
 --------------------
 >> inner query depends on value from outer.
 
+Transactions 
+----------------
+COMMIT, AUTOCOMMIT, ROLLBACK.
+
+START TRANSACTION 
+COMMIT 
+ROLLBACK 
+SAVEPOINT 
+ROLLBACK TO SAVEPOINT
+
+syntax:
+----------
+START TRANSACTION;
+query1 
+SAVEPOINT sv1;
+query2
+SAVEPOINT sv2;
+query3
+query4
+query5
+COMMIT/ROLLBACK;
+ROLLBACK to sv2
+
+u1 1000
+u2 2000
+
+u1 --> 10 --> u2 
+
+
+start transaction;
+update bank set balance=balance-10 where id=u1;
+update bank set balance=balance+10 where id=u2;
+commit;
+rollback;
