@@ -360,3 +360,20 @@ update bank set balance=balance-10 where id=u1;
 update bank set balance=balance+10 where id=u2;
 commit;
 rollback;
+
+Views 
+--------
+>> It is a virtual table created from one or more existing table.
+>> does not store data seperately.
+>> Stores a query.
+
+security--> giving access only to required cols.
+Simplifies the complex query.
+
+To Create a view --> CREATE VIEW viewName AS SELECT......;
+To Update a view --> CREATE OR REPLACE VIEW viewName AS SELECT.....;
+Drop a View --> DROP VIEW viewName;
+
+student --> name, grade.
+teacher --> name, age, contact, grade
+admin --> grade
